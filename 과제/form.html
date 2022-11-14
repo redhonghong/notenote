@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta char="uft-8" />
+    <title>방명록</title>
+    <style>
+      @import url(mystyle.css);
+    </style>
+  </head>
+
+  <body>
+    <h3 align="center">방명록</h3>
+    <hr />
+    <fieldset align="center">
+      <legend><strong>정보입력</strong></legend>
+      이름 : <input type="text" placeholder="홍원형" /><br />
+      학과 : <input type="text" list="what" /><br />
+      <datalist id="what">
+        <br />
+        <option value="컴퓨터소프트웨어"></option>
+        <option value="정보보안"></option>
+        <option value="사물인터넷"></option>
+        <option value="인공지능"></option>
+      </datalist>
+
+      관계 : <input type="text" list="friend" />
+      <datalist id="friend">
+        <option value="가족"></option>
+        <option value="친구"></option>
+        <option value="연인"></option>
+        <option value="어사 및 초면"></option>
+      </datalist>
+      <p align="center">
+        <input type="submit" value="저장" />
+        <input type="submit" value="삭제" />
+        <br />
+        방문해 주셔서 정말 감사합니다.
+      </p>
+    </fieldset>
+  </body>
+</html>
